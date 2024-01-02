@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calculate_background" translatesAutoresizingMaskIntoConstraints="NO" id="dwW-r8-QSE">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="893"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kaj-ax-vFR">
+                                <rect key="frame" x="0.0" y="59" width="393" height="800"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CALCULATE YOUR BMI" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKl-Yd-LQq">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="400"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="KTR-W6-p6A"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oLU-Ez-xHo">
+                                        <rect key="frame" x="0.0" y="400" width="393" height="400"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8Kq-Vf-Q9b">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="350"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="78q-3z-cq1">
+                                                <rect key="frame" x="0.0" y="350" width="393" height="50"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="6AR-nF-uGW"/>
+                                            <constraint firstItem="78q-3z-cq1" firstAttribute="top" secondItem="oLU-Ez-xHo" secondAttribute="top" constant="350" id="uuS-qU-WVO"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oLU-Ez-xHo" firstAttribute="leading" secondItem="Kaj-ax-vFR" secondAttribute="leading" id="4e9-Gu-wzu"/>
+                                    <constraint firstItem="qKl-Yd-LQq" firstAttribute="leading" secondItem="Kaj-ax-vFR" secondAttribute="leading" id="56R-sS-xXH"/>
+                                    <constraint firstAttribute="trailing" secondItem="oLU-Ez-xHo" secondAttribute="trailing" id="86d-Xb-8IF"/>
+                                    <constraint firstItem="oLU-Ez-xHo" firstAttribute="top" secondItem="qKl-Yd-LQq" secondAttribute="bottom" id="VE7-4h-YY7"/>
+                                    <constraint firstAttribute="trailing" secondItem="qKl-Yd-LQq" secondAttribute="trailing" id="ofh-xd-2N1"/>
+                                    <constraint firstItem="qKl-Yd-LQq" firstAttribute="top" secondItem="Kaj-ax-vFR" secondAttribute="top" id="rna-WL-I6C"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6Z-bH-AG1">
+                                <rect key="frame" x="0.0" y="774.66666666666663" width="393" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dwW-r8-QSE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1JT-D5-3kM"/>
+                            <constraint firstItem="Q6Z-bH-AG1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="39X-88-vKM"/>
+                            <constraint firstItem="Kaj-ax-vFR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SDr-w6-j5w"/>
+                            <constraint firstItem="dwW-r8-QSE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cNd-F0-A8O"/>
+                            <constraint firstItem="Kaj-ax-vFR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="d1E-ZN-eL5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kaj-ax-vFR" secondAttribute="trailing" id="evr-pN-Oct"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kaj-ax-vFR" secondAttribute="bottom" id="kKI-3c-dr3"/>
+                            <constraint firstItem="dwW-r8-QSE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="laH-ZK-bMe"/>
+                            <constraint firstAttribute="bottom" secondItem="dwW-r8-QSE" secondAttribute="bottom" id="s3r-AS-Y3L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q6Z-bH-AG1" secondAttribute="bottom" constant="50" id="tdF-Iv-Wzc"/>
+                            <constraint firstItem="Q6Z-bH-AG1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y8F-jN-dS2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Bdi-Ua-p4W">
+            <objects>
+                <viewController id="sue-wO-jat" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hIf-hf-2oP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="M2t-Gc-4te"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tyC-5j-T1O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="752" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calculate_background" width="375" height="812"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
