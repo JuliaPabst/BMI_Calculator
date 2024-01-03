@@ -13,6 +13,7 @@
 		A3812F252B43056200AAD90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3812F242B43056200AAD90F /* Assets.xcassets */; };
 		A3812F282B43056200AAD90F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3812F262B43056200AAD90F /* LaunchScreen.storyboard */; };
 		A3812F322B446ABC00AAD90F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3812F1F2B43056000AAD90F /* ViewController.swift */; };
+		A3812F342B45B1E300AAD90F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3812F332B45B1E300AAD90F /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A3812F242B43056200AAD90F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3812F272B43056200AAD90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3812F292B43056200AAD90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3812F332B45B1E300AAD90F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				A3812F1F2B43056000AAD90F /* ViewController.swift */,
+				A3812F332B45B1E300AAD90F /* SecondViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3812F342B45B1E300AAD90F /* SecondViewController.swift in Sources */,
 				A3812F322B446ABC00AAD90F /* ViewController.swift in Sources */,
 				A3812F1C2B43056000AAD90F /* AppDelegate.swift in Sources */,
 				A3812F1E2B43056000AAD90F /* SceneDelegate.swift in Sources */,
