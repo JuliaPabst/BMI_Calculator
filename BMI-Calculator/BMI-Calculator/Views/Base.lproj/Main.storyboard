@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Calculate View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CalculateViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,25 +125,26 @@
                         <outlet property="heightSlider" destination="hHa-KX-WI3" id="T0F-ut-J0A"/>
                         <outlet property="weightLabel" destination="oTd-a3-Hta" id="x4j-ty-JV8"/>
                         <outlet property="weightSlider" destination="bRE-IB-aeC" id="EZ6-Dk-mLI"/>
+                        <segue destination="sue-wO-jat" kind="presentation" identifier="goToResults" id="Xgt-Ex-IKF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="48" y="-2"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="Bdi-Ua-p4W">
             <objects>
-                <viewController id="sue-wO-jat" sceneMemberID="viewController">
+                <viewController id="sue-wO-jat" customClass="ResultsViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hIf-hf-2oP">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="result_background" translatesAutoresizingMaskIntoConstraints="NO" id="LW8-bi-c3Q">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="e42-w4-phu">
-                                <rect key="frame" x="20" y="59" width="353" height="763"/>
+                                <rect key="frame" x="20" y="0.0" width="353" height="812"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ow-uq-Sbp">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="350"/>
@@ -184,7 +185,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Pw-Oi-leF">
-                                        <rect key="frame" x="0.0" y="450" width="353" height="263"/>
+                                        <rect key="frame" x="0.0" y="450" width="353" height="312"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EAT SOME MORE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voP-dJ-SNy">
                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="37"/>
@@ -200,17 +201,21 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nC-F7-0fs">
-                                        <rect key="frame" x="0.0" y="713" width="353" height="50"/>
+                                        <rect key="frame" x="0.0" y="762" width="353" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="7M1-vX-67a"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                        <buttonConfiguration key="configuration" style="plain" title="Recalculate">
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                             <color key="baseForegroundColor" red="0.38256576660000002" green="0.37454065679999998" blue="0.60002386569999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="recalculate:" destination="sue-wO-jat" eventType="touchUpInside" id="70z-Fn-uZI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -235,6 +240,10 @@
                             <constraint firstAttribute="bottom" secondItem="e42-w4-phu" secondAttribute="bottom" constant="30" id="xxS-6M-QgP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adviceLabel" destination="voP-dJ-SNy" id="E11-GG-Nx4"/>
+                        <outlet property="bmiLabel" destination="DrI-ty-trb" id="6zi-DC-U6X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tyC-5j-T1O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

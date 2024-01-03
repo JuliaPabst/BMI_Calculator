@@ -9,6 +9,9 @@ import UIKit
 
 class ResultsViewController: UIViewController {
 
+    @IBOutlet var bmiLabel: UILabel!
+    @IBOutlet var adviceLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,6 +19,10 @@ class ResultsViewController: UIViewController {
     }
     
 
+    @IBAction func recalculate(_ sender: UIButton) {
+    }
+    
+    
     /*
     // MARK: - Navigation
 
