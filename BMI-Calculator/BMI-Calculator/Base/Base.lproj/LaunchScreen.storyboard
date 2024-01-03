@@ -28,7 +28,6 @@
                             <constraint firstItem="6k7-6n-vgh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OGa-pS-pt8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6k7-6n-vgh" secondAttribute="trailing" constant="20" id="Zg1-Iq-djf"/>
                             <constraint firstItem="6k7-6n-vgh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="b7W-Rh-2FY"/>
-                            <constraint firstItem="6k7-6n-vgh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nSO-cK-ldB"/>
                         </constraints>
                     </view>
                 </viewController>
