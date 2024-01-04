@@ -98,6 +98,7 @@
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" red="0.38256576660000002" green="0.37454065679999998" blue="0.60002386569999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -221,7 +222,6 @@
                                 <constraints>
                                     <constraint firstItem="EYM-qc-Pan" firstAttribute="top" secondItem="1ow-uq-Sbp" secondAttribute="bottom" id="5mL-Id-MbL"/>
                                     <constraint firstItem="EYM-qc-Pan" firstAttribute="top" secondItem="e42-w4-phu" secondAttribute="top" constant="350" id="YbA-Wh-2RR"/>
-                                    <constraint firstItem="1ow-uq-Sbp" firstAttribute="top" secondItem="e42-w4-phu" secondAttribute="top" id="f3t-hq-9jf"/>
                                     <constraint firstItem="1ow-uq-Sbp" firstAttribute="leading" secondItem="e42-w4-phu" secondAttribute="leading" id="ioQ-JE-kSS"/>
                                     <constraint firstAttribute="trailing" secondItem="1ow-uq-Sbp" secondAttribute="trailing" id="nfY-NO-WHS"/>
                                 </constraints>

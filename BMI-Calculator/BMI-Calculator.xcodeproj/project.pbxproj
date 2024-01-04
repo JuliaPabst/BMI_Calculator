@@ -14,6 +14,7 @@
 		A3812F282B43056200AAD90F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3812F262B43056200AAD90F /* LaunchScreen.storyboard */; };
 		A3812F322B446ABC00AAD90F /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3812F1F2B43056000AAD90F /* CalculateViewController.swift */; };
 		A3812F362B45B6BC00AAD90F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3812F352B45B6BC00AAD90F /* ResultsViewController.swift */; };
+		A3812F382B47367400AAD90F /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3812F372B47367400AAD90F /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A3812F272B43056200AAD90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3812F292B43056200AAD90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3812F352B45B6BC00AAD90F /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		A3812F372B47367400AAD90F /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				A3812F1B2B43056000AAD90F /* AppDelegate.swift */,
 				A3812F1D2B43056000AAD90F /* SceneDelegate.swift */,
+				A3812F392B47368F00AAD90F /* Model */,
 				A3812F312B43060D00AAD90F /* Controllers */,
 				A3812F302B4305D100AAD90F /* Views */,
 				A3812F242B43056200AAD90F /* Assets.xcassets */,
@@ -92,6 +95,14 @@
 				A3812F352B45B6BC00AAD90F /* ResultsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A3812F392B47368F00AAD90F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3812F372B47367400AAD90F /* CalculatorBrain.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 				A3812F322B446ABC00AAD90F /* CalculateViewController.swift in Sources */,
 				A3812F1C2B43056000AAD90F /* AppDelegate.swift in Sources */,
 				A3812F1E2B43056000AAD90F /* SceneDelegate.swift in Sources */,
+				A3812F382B47367400AAD90F /* CalculatorBrain.swift in Sources */,
 				A3812F362B45B6BC00AAD90F /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
