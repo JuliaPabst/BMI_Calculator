@@ -15,6 +15,7 @@
 		A3812F322B446ABC00AAD90F /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3812F1F2B43056000AAD90F /* CalculateViewController.swift */; };
 		A3812F362B45B6BC00AAD90F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3812F352B45B6BC00AAD90F /* ResultsViewController.swift */; };
 		A3812F382B47367400AAD90F /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3812F372B47367400AAD90F /* CalculatorBrain.swift */; };
+		A3812F3B2B4C768600AAD90F /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3812F3A2B4C768600AAD90F /* BMI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A3812F292B43056200AAD90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3812F352B45B6BC00AAD90F /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		A3812F372B47367400AAD90F /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		A3812F3A2B4C768600AAD90F /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				A3812F372B47367400AAD90F /* CalculatorBrain.swift */,
+				A3812F3A2B4C768600AAD90F /* BMI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				A3812F1C2B43056000AAD90F /* AppDelegate.swift in Sources */,
 				A3812F1E2B43056000AAD90F /* SceneDelegate.swift in Sources */,
 				A3812F382B47367400AAD90F /* CalculatorBrain.swift in Sources */,
+				A3812F3B2B4C768600AAD90F /* BMI.swift in Sources */,
 				A3812F362B45B6BC00AAD90F /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
