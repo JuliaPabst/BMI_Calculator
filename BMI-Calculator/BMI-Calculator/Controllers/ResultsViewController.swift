@@ -22,7 +22,7 @@ class ResultsViewController: UIViewController {
         super.viewDidLoad()
         bmiLabel.text = bmiValue!
         background.backgroundColor = color ?? UIColor.systemBlue
-        adviceLabel.text = advice ?? "Try again"
+        adviceLabel.text = advice
         
     }
     
