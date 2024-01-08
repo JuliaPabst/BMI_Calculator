@@ -151,7 +151,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="350"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="YOUR RESULT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEX-d0-usv">
-                                                <rect key="frame" x="30" y="250" width="293" height="100"/>
+                                                <rect key="frame" x="30" y="250" width="350" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="293" id="GoO-2p-VC7"/>
                                                     <constraint firstAttribute="width" constant="350" id="cBu-1h-Bds"/>
@@ -242,6 +242,7 @@
                     </view>
                     <connections>
                         <outlet property="adviceLabel" destination="voP-dJ-SNy" id="E11-GG-Nx4"/>
+                        <outlet property="background" destination="hIf-hf-2oP" id="3Wc-AE-hZ4"/>
                         <outlet property="bmiLabel" destination="DrI-ty-trb" id="6zi-DC-U6X"/>
                     </connections>
                 </viewController>
